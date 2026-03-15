@@ -1,0 +1,57 @@
+{
+    "name": "back2ops/elevenlabs",
+    "description": "A Laravel package for the ElevenLabs Voice API — text-to-speech, speech-to-text, and sound effects.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "elevenlabs",
+        "text-to-speech",
+        "speech-to-text",
+        "tts",
+        "stt",
+        "sound-effects"
+    ],
+    "authors": [
+        {
+            "name": "back2ops",
+            "email": "code@back2ops.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^10.0|^11.0",
+        "illuminate/http": "^10.0|^11.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0",
+        "phpunit/phpunit": "^10.0|^11.0",
+        "mockery/mockery": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Back2ops\\ElevenLabs\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Back2ops\\ElevenLabs\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Back2ops\\ElevenLabs\\ElevenLabsServiceProvider"
+            ],
+            "aliases": {
+                "ElevenLabs": "Back2ops\\ElevenLabs\\Facades\\ElevenLabs"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
