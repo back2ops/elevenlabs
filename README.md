@@ -33,7 +33,7 @@ Supports **Text to Speech**, **Speech to Text**, and **Sound Effects** with a fl
 ## Installation
 
 ```bash
-composer require scatterBrain/elevenlabs
+composer require back2ops/elevenlabs
 ```
 
 Laravel's **package auto-discovery** will automatically register the service provider and `ElevenLabs` facade — no manual setup needed.
